@@ -1,125 +1,126 @@
-# Ne Kadar Galatasaray Fanısın (GeoGame)
+# How Much of a Galatasaray Fan Are You (GeoGame)
 
-## 🎮 Oyun Açıklaması
+##  Game Description
 
-"Ne kadar Galatasary Fanısın", Galatasaray futbol takımının oyuncularının ülkelerini harita üzerinde tahmin etmeye dayalı interaktif bir coğrafya oyunudur. Oyun, Leaflet.js harita kütüphanesi kullanılarak geliştirilmiş olup, tamamen tarayıcı tabanlı çalışmaktadır.
+**“How Much of a Galatasaray Fan Are You”** is an interactive geography-based game where you guess the home countries of Galatasaray football players on a world map. The game is built using the Leaflet.js mapping library and runs entirely in the browser.
 
-## 📋 Oyun Kuralları
+##  Game Rules
 
-### Genel Kurallar
-- Oyun 3 zorluk seviyesinden oluşur: **KOLAY**, **ORTA**, **ZOR**
-- Her zorluk seviyesinde 10 oyuncu sorusu ve 2 trivia sorusu bulunur
-- Toplam 30 oyuncu sorusu ve 6 trivia sorusu ile oyun tamamlanır
-- Oyuncular 75 kişilik havuzdan rastgele seçilir
-- Her oyun farklıdır (rastgele seçim mekanizması)
+### General Rules
+- The game has **3 difficulty levels**: **EASY**, **MEDIUM**, **HARD**
+- Each level contains **10 player questions + 2 trivia questions**
+- The full game consists of **30 player questions and 6 trivia questions**
+- Players are selected randomly from a pool of **75 players**
+- Every game is unique thanks to a randomness mechanism
 
-### Zorluk Seviyeleri
+### Difficulty Levels
 
-| Seviye | Süre | Harita Yakınlaştırma | Skor Çarpanı |
-|--------|------|---------------------|--------------|
-| **KOLAY** | 45 saniye | Aktif | ×1 |
-| **ORTA** | 30 saniye | Aktif | ×1.5 |
-| **ZOR** | 15 saniye | Pasif | ×2 |
+| Level | Time | Map Zoom | Score Multiplier |
+|--------|------|---------------------|----------------|
+| **EASY** | 45 seconds | Enabled | ×1 |
+| **MEDIUM** | 30 seconds | Enabled | ×1.5 |
+| **HARD** | 15 seconds | Disabled | ×2 |
 
-### Oyun Akışı
+### Game Flow
 
-1. **KOLAY Seviyesi** (10 oyuncu + 2 trivia)
-   - 5. raunddan sonra ilk trivia sorusu
-   - 10. raunddan sonra ikinci trivia sorusu
-   
-2. **ORTA Seviyesi** (10 oyuncu + 2 trivia)
-   - 5. raunddan sonra ilk trivia sorusu
-   - 10. raunddan sonra ikinci trivia sorusu
-   
-3. **ZOR Seviyesi** (10 oyuncu + 2 trivia)
-   - 5. raunddan sonra ilk trivia sorusu
-   - 10. raunddan sonra ikinci trivia sorusu
-   - Oyun sonu
+1. **EASY Level** (10 players + 2 trivia)  
+   - 1st trivia after round 5  
+   - 2nd trivia after round 10  
 
-## 🎯 Skorlama Sistemi
+2. **MEDIUM Level** (10 players + 2 trivia)  
+   - Same structure as EASY  
 
-### Puan Hesaplama
+3. **HARD Level** (10 players + 2 trivia)  
+   - Same structure  
+   - Ends after the second trivia  
 
-- **Doğru Ülke Tahmini**: 10 puan × zorluk çarpanı
-- **Hızlı Cevap Bonusu**: +2 puan (süre bitmeden cevap verilirse)
-- **Trivia Doğru Cevap**: +5 puan
+##  Scoring System
 
-### Skor Normalizasyonu
+### Score Calculation
 
-Oyun sonunda skor 0-100 arasına normalize edilir:
-- Maksimum olası skor hesaplanır
-- Final skor = (Toplam Skor / Maksimum Skor) × 100
+- **Correct Country Guess**: 10 points × difficulty multiplier  
+- **Fast Answer Bonus**: +2 points (if answered before time runs out)  
+- **Correct Trivia Answer**: +5 points  
 
-### Fan Seviyeleri
+### Score Normalization
 
-| Skor Aralığı | Fan Seviyesi |
-|--------------|--------------|
-| 0-30 | Yeni Tanışıyor |
-| 31-60 | Sempatik Taraftar |
-| 61-80 | Çılgın Galatasaraylı |
-| 81-100 | Ultraslan Efsanesi |
+At the end of the game, your score is normalized to a range of **0–100**:
 
-## 🔄 Rastgele Seçim Mekanizması
+- Maximum possible score is calculated  
+- Final score = (Total Score / Maximum Score) × 100  
 
-- **Oyuncu Seçimi**: 75 oyuncudan her oyun için 30 oyuncu rastgele seçilir
-- **Trivia Seçimi**: Trivia havuzundan her oyun için 6 soru rastgele seçilir
-- **Karıştırma**: Fisher-Yates shuffle algoritması benzeri bir yöntem kullanılır
-- **Tekrar**: Her oyun farklı bir kombinasyon sunar
+### Fan Levels
 
-## 🛠️ Teknoloji Yığını
+| Score Range | Fan Level |
+|-------------|-----------|
+| 0–30 | Getting to Know |
+| 31–60 | Friendly Supporter |
+| 61–80 | Crazy Galatasaray Fan |
+| 81–100 | Ultraslan Legend |
+
+##  Random Selection Mechanism
+
+- **Player Selection**: 30 out of 75 players are randomly chosen each game  
+- **Trivia Selection**: 6 trivia questions are randomly selected  
+- **Shuffling**: Uses a Fisher–Yates–style shuffle  
+- **Uniqueness**: Every game presents a different combination  
+
+##  Tech Stack
 
 ### Frontend
-- **HTML5**: Yapısal iskelet
-- **CSS3**: Modern ve responsive tasarım
-- **JavaScript (ES6+)**: Oyun mantığı ve etkileşim
+- **HTML5**: Structural layout  
+- **CSS3**: Modern and responsive design  
+- **JavaScript (ES6+)**: Game logic and interactions  
 
-### Harita Kütüphanesi
-- **Leaflet.js v1.9.4**: İnteraktif harita görselleştirme
-- **OpenStreetMap**: Harita tile'ları
-- **Nominatim API**: Reverse geocoding (koordinat → ülke)
+### Mapping Library
+- **Leaflet.js v1.9.4**: Interactive map visualization  
+- **OpenStreetMap**: Map tiles  
+- **Nominatim API**: Reverse geocoding (coordinates → country)
 
-### Veri Yönetimi
-- **JSON**: Oyuncu ve trivia verileri
-  - `players.json`: 75 Galatasaray oyuncusu
-  - `trivia.json`: Galatasaray ile ilgili trivia soruları
+### Data Management
+- **JSON** format for player and trivia data:
+  - `players.json`: 75 Galatasaray players  
+  - `trivia.json`: Trivia questions related to Galatasaray  
 
-## 🎨 Tasarım Raporu
+##  Design Report
 
-### Renk Paleti
-- **Ana Renkler**: Sarı (#FFD700) ve Kırmızı (#FF0000) - Galatasaray'ın resmi renkleri
-- **Arka Plan**: Gradient (Sarı → Kırmızı)
-- **Kartlar**: Beyaz arka plan, yuvarlatılmış köşeler, gölge efektleri
+### Color Palette
+- **Primary Colors**: Yellow (#FFD700) and Red (#FF0000) — Galatasaray’s official colors  
+- **Background**: Yellow → Red gradient  
+- **Cards**: White background, rounded corners, soft shadows  
 
-### UI Bileşenleri
-- **Header**: Oyun başlığı, zorluk rozeti, geri sayım zamanlayıcısı
-- **Harita Bölümü**: Sol tarafta, tam ekran harita, oyuncu bilgisi
-- **Skor Tablosu**: Sağ tarafta, anlık skor, doğru/yanlış sayıları
-- **Modaller**: Trivia soruları ve bitiş ekranı için overlay'ler
+### UI Components
+- **Header**: Game title, difficulty badge, countdown timer  
+- **Map Section**: Full-screen map with player info  
+- **Scoreboard**: Live score, correct/wrong counters  
+- **Modals**: Trivia questions and end-game screen  
 
-### Responsive Tasarım
-- Desktop: 2 sütunlu grid (harita + skor tablosu)
-- Mobil: Tek sütun, dikey yerleşim
+### Responsive Design
+- **Desktop**: Two-column layout (map + scoreboard)  
+- **Mobile**: Single-column vertical layout  
 
-### Etkileşim Özellikleri
-- Harita üzerinde tıklama ile konum seçimi
-- Marker ile seçilen konumun gösterilmesi
-- Zorluk seviyesine göre zoom kontrolü
-- Gerçek zamanlı skor güncellemesi
-- Animasyonlu geçişler ve hover efektleri
+### Interaction Features
+- Click on the map to select a location  
+- Marker displays selected point  
+- Zoom control depending on difficulty  
+- Real-time score updates  
+- Smooth animations and hover effects  
 
-## 🔧 Özellikler
+## Features
 
-✅ Otomatik zorluk ilerlemesi (Kullanıcı seçimi yok)  
-✅ Rastgele oyuncu ve trivia seçimi  
-✅ Reverse geocoding ile ülke tespiti  
-✅ Gerçek zamanlı zamanlayıcı  
-✅ Skor normalizasyonu ve fan seviyesi hesaplama  
-✅ Responsive tasarım  
-✅ Modal tabanlı trivia sistemi  
-✅ Oyun sonu ekranı ve yeniden oynama  
+ Automatic difficulty progression  
+ Random player and trivia selection  
+ Reverse geocoding for country detection  
+ Real-time timer  
+ Score normalization and fan level calculation  
+ Fully responsive UI  
+ Modal-based trivia system  
+ End-game screen + replay option  
 
+---
 
-**Not**: Bu oyun, Galatasaray taraftarlarının coğrafya bilgilerini test etmek ve eğlenceli bir şekilde öğrenmelerini sağlamak amacıyla geliştirilmiştir. ⚽🦁
+**Note**: This game is designed to help Galatasaray fans test their geography knowledge in a fun and engaging way.  
+
 
 
 
