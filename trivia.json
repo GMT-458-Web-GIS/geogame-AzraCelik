@@ -1,0 +1,63 @@
+[
+  {
+    "question": "Galatasaray hangi yılda kurulmuştur?",
+    "answers": ["1905", "1903", "1907", "1901"],
+    "correct": 0
+  },
+  {
+    "question": "Galatasaray'ın takma adı nedir?",
+    "answers": ["Aslanlar", "Sarı-Kırmızılılar", "Cimbom", "Hepsi"],
+    "correct": 3
+  },
+  {
+    "question": "Galatasaray kaç kez UEFA Kupası kazanmıştır?",
+    "answers": ["1", "2", "3", "0"],
+    "correct": 0
+  },
+  {
+    "question": "Galatasaray'ın stadyumunun adı nedir?",
+    "answers": ["Türk Telekom Stadyumu", "NEF Stadyumu", "Rams Park", "Ali Sami Yen"],
+    "correct": 2
+  },
+  {
+    "question": "Galatasaray hangi şehirde kurulmuştur?",
+    "answers": ["Ankara", "İzmir", "İstanbul", "Bursa"],
+    "correct": 2
+  },
+  {
+    "question": "Galatasaray'ın en çok gol atan oyuncusu kimdir?",
+    "answers": ["Hakan Şükür", "Metin Oktay", "Tanju Çolak", "Gheorghe Hagi"],
+    "correct": 1
+  },
+  {
+    "question": "Galatasaray kaç kez Süper Lig şampiyonu olmuştur?",
+    "answers": ["20", "22", "24", "25"],
+    "correct": 2
+  },
+  {
+    "question": "Galatasaray'ın renkleri neden sarı-kırmızıdır?",
+    "answers": ["Osmanlı bayrağından", "Gül bahçesinden", "Güneş ve kan", "Tesadüf"],
+    "correct": 1
+  },
+  {
+    "question": "Galatasaray'ın efsanevi teknik direktörü Fatih Terim kaç kez şampiyonluk kazandırmıştır?",
+    "answers": ["6", "8", "10", "12"],
+    "correct": 1
+  },
+  {
+    "question": "Galatasaray hangi yılda UEFA Kupası'nı kazanmıştır?",
+    "answers": ["1998", "2000", "2002", "2004"],
+    "correct": 1
+  },
+  {
+    "question": "Galatasaray'ın maskotu nedir?",
+    "answers": ["Aslan", "Kartal", "Kurt", "Kaplan"],
+    "correct": 0
+  },
+  {
+    "question": "Galatasaray'ın ilk şampiyonluğu hangi yılda olmuştur?",
+    "answers": ["1959", "1962", "1965", "1968"],
+    "correct": 0
+  }
+]
+

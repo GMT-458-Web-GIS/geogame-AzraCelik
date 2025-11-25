@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Big of a Galatasaray Fan Are You?</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>⚽ How Big of a Galatasaray Fan Are You?</h1>
+            <div class="game-info">
+                <span class="difficulty-badge" id="difficultyBadge">EASY</span>
+                <span class="timer" id="timer">45</span>
+            </div>
+        </header>
+
+        <!-- Main Game Area -->
+        <main class="game-area">
+            <!-- Top: Player and Map Section -->
+            <div class="top-section">
+                <!-- Left: Player Info -->
+                <section class="player-section">
+                    <div class="player-info">
+                        <div class="player-header">
+                            <img id="playerImage" src="" alt="Player Photo" class="player-image" />
+                            <div class="player-details">
+                                <h2 id="playerName">Player Name</h2>
+                                <p class="round-info">Round <span id="currentRound">1</span> / <span id="totalRounds">10</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right: Map Section -->
+                <section class="map-section">
+                    <div id="map"></div>
+                </section>
+            </div>
+
+            <!-- Bottom: Scoreboard Section -->
+            <section class="scoreboard-section">
+                <div class="scoreboard">
+                    <h3>Scoreboard</h3>
+                    <div class="score-display">
+                        <div class="score-item">
+                            <span>Total Score:</span>
+                            <span id="totalScore">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span>Correct:</span>
+                            <span id="correctCount">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span>Wrong:</span>
+                            <span id="wrongCount">0</span>
+                        </div>
+                    </div>
+                    <div class="level-info">
+                        <h4>Difficulty Level</h4>
+                        <p id="currentLevel">EASY</p>
+                        <p class="multiplier">Multiplier: <span id="multiplier">×1</span></p>
+                    </div>
+                </div>
+                <div id="answerFeedback" class="answer-feedback"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Trivia Modal -->
+    <div id="triviaModal" class="modal">
+        <div class="modal-content">
+            <h2>Trivia Question</h2>
+            <p id="triviaQuestion"></p>
+            <div id="triviaAnswers" class="trivia-answers"></div>
+            <button id="submitTrivia" class="btn btn-primary">Submit Answer</button>
+        </div>
+    </div>
+
+    <!-- Finish Screen Modal -->
+    <div id="finishModal" class="modal">
+        <div class="modal-content finish-content">
+            <h2>Game Over! 🎉</h2>
+            <div class="final-score">
+                <h3>Your Final Score</h3>
+                <div class="score-number" id="finalScore">0</div>
+                <div class="fan-level" id="fanLevel">Getting Started</div>
+            </div>
+            <button id="restartGame" class="btn btn-primary">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
