@@ -1,0 +1,126 @@
+﻿[
+    {
+        "player": "Carlos Vinícius",
+        "country": "Brazil",
+        "image": "https://www.habersarikirmizi.com/images/haberler/2024/02/_39751.jpg"
+    },
+    {
+        "player": "Cédric Bakambu",
+        "country": "DR Congo",
+        "image": "https://hlkiurt3.rocketcdn.com/news/49316356ddc645b9884f51f7ae5233f0.jpeg"
+    },
+    {
+        "player": "Fredrik Midtsjø",
+        "country": "Norway",
+        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2023/09/07/thumbs_b_c_3b08a0ceb648554a9f6970cb7ad0c56f.jpg?v=205014"
+    },
+    {
+        "player": "Gustavo Assunção",
+        "country": "Portugal",
+        "image": "https://tmssl.akamaized.net/images/foto/big/gustavo-assuncao-1636974730-74713.jpg?lm=1636974742"
+    },
+    {
+        "player": "Olimpiu Moruţan",
+        "country": "Romania",
+        "image": "https://tmssl.akamaized.net/images/foto/big/morutan-1637071383-74780.jpg?lm=1637071402"
+    },
+    {
+        "player": "Mostafa Mohammed",
+        "country": "Egypt",
+        "image": "https://iasbh.tmgrup.com.tr/5dac39/650/344/0/0/800/419?u=https://isbh.tmgrup.com.tr/sbh/2021/02/11/gedson-fernandes-ile-bir-sezon-daha-1613047120285.jpg"
+    },
+    {
+        "player": "Alexandru Cicaldău",
+        "country": "Romania",
+        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2022/08/27/thumbs_b_c_a91b32afcbe48823eb22b3e85c3af739.jpg?v=215809"
+    },
+    {
+        "player": "Tomáš Ujfaluši",
+        "country": "Czech Republic",
+        "image": "https://i.eurosport.com/2012/03/15/820545-20572304-2560-1440.jpg"
+    },
+    {
+        "player": "Sabri Lamouchi",
+        "country": "France"
+    },
+    {
+        "player": "Florin Andone",
+        "country": "Romania",
+        "image": "https://assets.goal.com/images/v3/blt67724e843daa0a55/c681fa3d558a5b860702fae1e22f40055b630407.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+    },
+    {
+        "player": "Jimmy Durmaz",
+        "country": "Sweden",
+        "image": "https://tmssl.akamaized.net//images/foto/galerie/jimmy-durmaz-galatasaray-1589793340-38825.jpg"
+    },
+    {
+        "player": "Ryan Donk",
+        "country": "Netherlands",
+        "image": "https://tmssl.akamaized.net/images/foto/big/ryan-donk-galatasaray-1627635633-68053.jpg?lm=1627635661"
+    },
+    {
+        "player": "Przemysław Frankowski",
+        "country": "Poland",
+        "image": "https://tmssl.akamaized.net/images/foto/big/przemyslaw-frankowski-galatasaray-2024-2025-1750065648-170150.jpg?lm=1750065665"
+    },
+    {
+        "player": "Wilfred Singo",
+        "country": "Ivory Coast",
+        "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1LylTS.img?w=768&h=512&m=6&x=841&y=375&s=86&d=86"
+    },
+    {
+        "player": "Feghouli",
+        "country": "Algeria",
+        "image": "https://assets.goal.com/images/v3/bltd84cf885c2789e00/e14acdbf72c2eb30367e0ae177e718b47a54a648.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+    },
+    {
+        "player": "Norman Mapeza",
+        "country": "Zimbabwe"
+    },
+    {
+        "player": "Kostas Mitroglou",
+        "country": "Greece",
+        "image": "https://assets.goal.com/images/v3/blt48c3585a46dd820c/GettyImages-1092948798.jpg?auto=webp&format=pjpg&width=3840&quality=60"
+    },
+    {
+        "player": "Mariano Ferreira Filho",
+        "country": "Brazil",
+        "image": "https://cdnuploads.aa.com.tr/uploads/Contents/2020/07/30/thumbs_b_c_f7e12060fafbdce80a26e0e61c548703.jpg?v=160153"
+    },
+    {
+        "player": "Henry Onyekuru",
+        "country": "Nigeria",
+        "image": "https://tmssl.akamaized.net//images/foto/galerie/henry-onyekuru-galatasaray-1725613395-147358.jpeg"
+    },
+    {
+        "player": "Kevin Großkreutz",
+        "country": "Germany",
+        "image": "https://image.fanatik.com.tr/i/fanatik/75/0x410/6251d41845d2a088402a17a8.jpg"
+    },
+    {
+        "player": "Izet Hajrović",
+        "country": "Bosnia and Herzegovina",
+        "image": "https://i20.haber7.net/resize/1280x720//haber/haber7/photos/bu_iki_takimdan_teklif_gelirse_giderim13926347940_h1128651.jpg"
+    },
+    {
+        "player": "Nordin Amrabat",
+        "country": "Morocco",
+        "image": "https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2014/01/15/1165889-19982572-2560-1440.jpg"
+    },
+    {
+        "player": "José Rodríguez Martínez",
+        "country": "Spain",
+        "image": "https://tmssl.akamaized.net//images/foto/galerie/jose-rodriguez-galatasaray-2015-2016-1707385358-128848.jpg"
+    },
+    {
+        "player": "Jason Denayer",
+        "country": "Belgium",
+        "image": "https://tmssl.akamaized.net//images/foto/galerie/denayer-galatasaray-1530708677-16467.jpg"
+    },
+    {
+        "player": "Elias Jelert",
+        "country": "Denmark",
+        "image": "https://tmssl.akamaized.net//images/foto/galerie/elias-jelert-galatasaray-2024-2025-1724079154-145585.jpg"
+    }
+]
+
