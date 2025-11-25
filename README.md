@@ -120,7 +120,7 @@ At the end of the game, your score is normalized to a range of **0–100**:
 ---
 
 **Note**: This game is designed to help Galatasaray fans test their geography knowledge in a fun and engaging way.  
-
+https://gmt-458-web-gis.github.io/geogame-AzraCelik/
 
 
 
