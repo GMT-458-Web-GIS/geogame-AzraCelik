@@ -1,123 +1,141 @@
-# How Much of a Galatasaray Fan Are You (GeoGame)
+# How Much of a Galatasaray Fan Are You?
 
-##  Game Description
+This is a fun and interactive geography-based game that tests how well you know Galatasaray players and the world map at the same time.
 
-**“How Much of a Galatasaray Fan Are You”** is an interactive geography-based game where you guess the home countries of Galatasaray football players on a world map. The game is built using the Leaflet.js mapping library and runs entirely in the browser.
+You are shown a Galatasaray player and asked to click on the map to select the country where that player is from.  
+The game runs fully in the browser using the Leaflet.js map library.
 
-##  Game Rules
+---
 
-### General Rules
-- The game has **3 difficulty levels**: **EASY**, **MEDIUM**, **HARD**
-- Each level contains **10 player questions + 2 trivia questions**
-- The full game consists of **30 player questions and 6 trivia questions**
-- Players are selected randomly from a pool of **75 players**
-- Every game is unique thanks to a randomness mechanism
+## How to Play
 
-### Difficulty Levels
+The game has **3 difficulty levels**:
 
-| Level | Time | Map Zoom | Score Multiplier |
-|--------|------|---------------------|----------------|
-| **EASY** | 45 seconds | Enabled | ×1 |
-| **MEDIUM** | 30 seconds | Enabled | ×1.5 |
-| **HARD** | 15 seconds | Disabled | ×2 |
+- EASY
+- MEDIUM
+- HARD
 
-### Game Flow
+Each level includes:
+- 10 player country guesses
+- 2 trivia questions about Galatasaray
 
-1. **EASY Level** (10 players + 2 trivia)  
-   - 1st trivia after round 5  
-   - 2nd trivia after round 10  
+In total, the game contains:
+- **30 player questions**
+- **6 trivia questions**
 
-2. **MEDIUM Level** (10 players + 2 trivia)  
-   - Same structure as EASY  
+---
 
-3. **HARD Level** (10 players + 2 trivia)  
-   - Same structure  
-   - Ends after the second trivia  
+## Difficulty Levels
 
-##  Scoring System
+| Level | Time Limit | Map Zoom | Score Multiplier |
+|-------|------------|----------|------------------|
+| EASY  | 45 seconds | Enabled  | x1 |
+| MEDIUM| 30 seconds | Enabled  | x1.5 |
+| HARD  | 15 seconds | Disabled | x2 |
 
-### Score Calculation
+As the difficulty increases:
+- You get less time
+- The map becomes harder to use
+- You earn more points
 
-- **Correct Country Guess**: 10 points × difficulty multiplier  
-- **Fast Answer Bonus**: +2 points (if answered before time runs out)  
-- **Correct Trivia Answer**: +5 points  
+---
 
-### Score Normalization
+## Game Flow
 
-At the end of the game, your score is normalized to a range of **0–100**:
+Each level follows the same structure:
 
-- Maximum possible score is calculated  
-- Final score = (Total Score / Maximum Score) × 100  
+1. 5 player questions  
+2. 1 trivia question  
+3. 5 player questions  
+4. 1 trivia question  
 
-### Fan Levels
+The game progresses from EASY → MEDIUM → HARD.
 
-| Score Range | Fan Level |
-|-------------|-----------|
-| 0–30 | Getting to Know |
-| 31–60 | Friendly Supporter |
+---
+
+## Scoring System
+
+### Player Questions
+- Correct country guess: **10 points**
+- Answer before time runs out: **+2 bonus**
+- Difficulty multiplier is applied
+
+### Trivia Questions
+- Correct answer: **+5 points**
+
+---
+
+## Fan Levels
+
+At the end of the game, your score is normalized to a **0–100** scale and you are given a fan title:
+
+| Score | Fan Level |
+|--------|-----------|
+| 0–30  | Getting Started |
+| 31–60 | Loyal Supporter |
 | 61–80 | Crazy Galatasaray Fan |
 | 81–100 | Ultraslan Legend |
 
-##  Random Selection Mechanism
+---
 
-- **Player Selection**: 30 out of 75 players are randomly chosen each game  
-- **Trivia Selection**: 6 trivia questions are randomly selected  
-- **Shuffling**: Uses a Fisher–Yates–style shuffle  
-- **Uniqueness**: Every game presents a different combination  
+## Every Game Is Different
 
-##  Tech Stack
+- 30 players are randomly selected from a pool of 75
+- Trivia questions change every game
+- Each session feels unique
+
+---
+
+## Technologies Used
 
 ### Frontend
-- **HTML5**: Structural layout  
-- **CSS3**: Modern and responsive design  
-- **JavaScript (ES6+)**: Game logic and interactions  
+- HTML
+- CSS
+- JavaScript
 
-### Mapping Library
-- **Leaflet.js v1.9.4**: Interactive map visualization  
-- **OpenStreetMap**: Map tiles  
-- **Nominatim API**: Reverse geocoding (coordinates → country)
+### Map System
+- Leaflet.js
+- OpenStreetMap
+- Nominatim API
 
-### Data Management
-- **JSON** format for player and trivia data:
-  - `players.json`: 75 Galatasaray players  
-  - `trivia.json`: Trivia questions related to Galatasaray  
+### Data
+- `players.json` → Player data  
+- `trivia.json` → Trivia questions
 
-##  Design Report
+---
 
-### Color Palette
-- **Primary Colors**: Yellow (#FFD700) and Red (#FF0000) — Galatasaray’s official colors  
-- **Background**: Yellow → Red gradient  
-- **Cards**: White background, rounded corners, soft shadows  
+## Design
 
-### UI Components
-- **Header**: Game title, difficulty badge, countdown timer  
-- **Map Section**: Full-screen map with player info  
-- **Scoreboard**: Live score, correct/wrong counters  
-- **Modals**: Trivia questions and end-game screen  
+- Galatasaray colors (red & yellow)
+- Clean and modern UI
+- Mobile responsive layout
+- Interactive map
+- Smooth animations
+- Modal-based trivia system
 
-### Responsive Design
-- **Desktop**: Two-column layout (map + scoreboard)  
-- **Mobile**: Single-column vertical layout  
-
-### Interaction Features
-- Click on the map to select a location  
-- Marker displays selected point  
-- Zoom control depending on difficulty  
-- Real-time score updates  
-- Smooth animations and hover effects  
+---
 
 ## Features
 
- Automatic difficulty progression  
- Random player and trivia selection  
- Reverse geocoding for country detection  
- Real-time timer  
- Score normalization and fan level calculation  
- Fully responsive UI  
- Modal-based trivia system  
- End-game screen + replay option  
+- Automatic level progression
+- Randomized player and trivia selection
+- Country detection via coordinates
+- Real-time countdown
+- Live score tracking
+- Replay option
+- Fully responsive
 
 ---
+
+## Summary
+
+This game combines Galatasaray passion with geography knowledge in a fun way.  
+Challenge yourself, learn new facts, and prove how big of a Galatasaray fan you are!
+
+---
+
+Enjoy the game! 🦁❤️💛
+
 
 **Note**: This game is designed to help Galatasaray fans test their geography knowledge in a fun and engaging way.  
 https://gmt-458-web-gis.github.io/geogame-AzraCelik/
