@@ -27,11 +27,10 @@ In total, the game contains:
 
 ## Difficulty Levels
 
-| Level | Time Limit | Map Zoom | Score Multiplier |
-|-------|------------|----------|------------------|
-| EASY  | 45 seconds | Enabled  | x1 |
-| MEDIUM| 30 seconds | Enabled  | x1.5 |
-| HARD  | 15 seconds | Disabled | x2 |
+ Level  Time Limit  Map Zoom  Score Multiplier 
+ EASY   45 seconds  Enabled   x1 
+ MEDIUM 30 seconds  Enabled   x1.5 
+ HARD   15 seconds  Disabled  x2 
 
 As the difficulty increases:
 - You get less time
@@ -69,12 +68,11 @@ The game progresses from EASY → MEDIUM → HARD.
 
 At the end of the game, your score is normalized to a **0–100** scale and you are given a fan title:
 
-| Score | Fan Level |
-|--------|-----------|
-| 0–30  | Getting Started |
-| 31–60 | Loyal Supporter |
-| 61–80 | Crazy Galatasaray Fan |
-| 81–100 | Ultraslan Legend |
+ Score  Fan Level 
+ 0–30  Getting Started 
+ 31–60  Loyal Supporter 
+ 61–80  Crazy Galatasaray Fan 
+ 81–100  Ultraslan Legend 
 
 ---
 
